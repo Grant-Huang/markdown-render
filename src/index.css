@@ -1,0 +1,16 @@
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+textarea {
+  border: none;
+  resize: none;
+  outline: none;
+}
+
+div {
+  border-left: 1px solid #ddd;
+}
