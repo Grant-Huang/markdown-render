@@ -1,0 +1,21 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:3000", // 确保端口号与开发服务器一致
+            "webRoot": "${workspaceFolder}/src", // 指向源代码目录
+            "preLaunchTask": "npm: start", // Corrected task label
+            "sourceMaps": true, // 启用源映射
+            "outFiles": [
+                "${workspaceFolder}/build/**/*.js" // 指向构建输出目录
+            ]
+        }
+    ]
+}

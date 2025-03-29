@@ -1,59 +1,75 @@
-# Markdown Renderer
+# Markdown 编辑器
 
-This project is a simple web application that accepts Markdown scripts and renders them as a displayable HTML page. It is built using React and TypeScript.
+一个支持 Mermaid 图表的 Markdown 编辑器，使用 React 和 TypeScript 构建。
 
-## Features
+## 功能特点
 
-- Accepts Markdown input
-- Renders Markdown as HTML
-- Simple and clean user interface
+- 实时预览 Markdown 内容
+- 支持 Mermaid 图表渲染
+- 分屏编辑模式
+- 响应式设计
 
-## Project Structure
+## 支持的图表类型
 
+- 流程图 (graph TD)
+- 时序图 (sequenceDiagram)
+- 甘特图 (gantt)
+- 饼图 (pie)
+- 类图 (classDiagram)
+- 状态图 (stateDiagram-v2)
+- 实体关系图 (erDiagram)
+
+## 开始使用
+
+1. 克隆仓库：
+```bash
+git clone [repository-url]
 ```
-markdown-renderer
-├── public
-│   └── index.html          # Main HTML file
-├── src
-│   ├── components
-│   │   └── MarkdownRenderer.tsx  # React component for rendering Markdown
-│   ├── styles
-│   │   └── styles.css      # CSS styles for the application
-│   ├── utils
-│   │   └── markdownParser.ts  # Utility for parsing Markdown
-│   └── index.tsx           # Entry point for the React application
-├── package.json             # npm configuration file
-├── tsconfig.json            # TypeScript configuration file
-└── README.md                # Project documentation
+
+2. 安装依赖：
+```bash
+npm install
 ```
 
-## Installation
-
-1. Clone the repository:
-   ```
-   git clone <repository-url>
-   ```
-2. Navigate to the project directory:
-   ```
-   cd markdown-renderer
-   ```
-3. Install the dependencies:
-   ```
-   npm install
-   ```
-
-## Usage
-
-To start the application, run:
-```
+3. 启动开发服务器：
+```bash
 npm start
 ```
-This will launch the application in your default web browser.
 
-## Contributing
+4. 在浏览器中打开 http://localhost:3000
 
-Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+## 使用示例
 
-## License
+```markdown
+# 流程图示例
 
-This project is licensed under the MIT License.
+```mermaid
+graph TD
+    A[开始] --> B{判断}
+    B -->|Yes| C[执行]
+    B -->|No| D[结束]
+    C --> D
+```
+
+## 时序图示例
+
+```mermaid
+sequenceDiagram
+    participant A as 用户
+    participant B as 系统
+    A->>B: 发送请求
+    B->>A: 返回响应
+```
+```
+
+## 技术栈
+
+- React
+- TypeScript
+- Mermaid.js
+- React-Markdown
+- React-Split
+
+## 许可证
+
+MIT

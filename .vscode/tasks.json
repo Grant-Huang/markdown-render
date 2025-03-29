@@ -1,0 +1,25 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "install",
+			"group": "none",
+			"problemMatcher": [],
+			"label": "npm: install",
+			"detail": "install dependencies from package"
+		},
+		{
+			"label": "npm: start",
+			"type": "shell",
+			"command": "cmd",
+			"args": ["/c", "npm start"], // Use cmd to run npm start
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [],
+			"detail": "Runs the npm start command to start the development server."
+		}
+	]
+}

@@ -14,3 +14,15 @@ textarea {
 div {
   border-left: 1px solid #ddd;
 }
+
+.mermaid-diagram {
+  background-color: white;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+.mermaid-diagram svg {
+  max-width: 100%;
+  height: auto;
+}
